@@ -1,45 +1,273 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Luba Deliveries</title>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Luba Deliveries</title>
+  <meta name="description" content="Luba Deliveries - Fast, Safe & Affordable Delivery Service across South Africa. Real-time tracking, various vehicle options, and transparent pricing." />
+  <meta name="keywords" content="Luba Deliveries, delivery South Africa, logistics, parcel tracking, relocation, passenger vans, delivery pricing" />
+  <meta name="author" content="Boitumelo Khauoe, Mathabo Motaung" />
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f2f2f2; color: #333; }
-    header { background-color: #000; color: gold; padding: 20px; text-align: center; }
-    section { padding: 40px 20px; max-width: 800px; margin: auto; }
-    h1 { font-size: 2em; }
-    .contact { background: #fff; padding: 20px; border-radius: 8px; margin-top: 20px; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f2f2f2;
+      color: #222;
+      line-height: 1.7;
+    }
+
+    header {
+      background-color: #000;
+      color: #f9c900; /* Brighter gold for better contrast */
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.5);
+      /* Removed text-shadow for clarity */
+    }
+
+    .under-construction {
+      background: #fff3cd; /* Softer yellow */
+      color: #856404;
+      text-align: center;
+      padding: 15px;
+      font-weight: bold;
+      border-bottom: 2px solid #ffc107;
+    }
+
+    section {
+      padding: 50px 25px;
+      max-width: 1000px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+      /* Removed text-shadow */
+    }
+
+    h2 {
+      color: #111;
+      margin-top: 50px;
+      margin-bottom: 20px;
+      border-left: 5px solid #f9c900; /* matching brighter gold */
+      padding-left: 15px;
+      font-size: 1.8em;
+    }
+
+    h3 {
+      margin-top: 30px;
+      color: #111;
+      font-size: 1.5em;
+      border-left: 4px solid #f9c900;
+      padding-left: 10px;
+    }
+
+    ul {
+      padding-left: 25px;
+      margin-bottom: 25px;
+    }
+
+    ul li {
+      margin-bottom: 12px;
+      font-size: 1.1em;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+
+    .highlight {
+      color: rgb(48, 46, 29);
+      font-weight: bold;
+    }
+
+    .contact, .developers {
+      background: #3f3939; /* Darker background for better contrast */
+      color: #f9c900; /* brighter gold text */
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      margin-top: 50px;
+      box-shadow: 0 4px 15px rgba(249, 201, 0, 0.5);
+    }
+
+    a {
+      color: #f9c900;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    form {
+      background: #f9f9f9;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-top: 30px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #222;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #888;
+      border-radius: 5px;
+      font-size: 1em;
+      color: #222;
+      background-color: #fff;
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #f9c900;
+      outline: none;
+    }
+
+    button {
+      background-color: #f9c900;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1.1em;
+      font-weight: bold;
+      color: #000;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover, button:focus {
+      background-color: #b8860b;
+      outline: none;
+    }
+
+    @media (max-width: 600px) {
+      section {
+        margin: 20px 10px;
+        padding: 25px 15px;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+    }
   </style>
 </head>
 <body>
 
   <header>
     <h1>Luba Deliveries</h1>
-    <p>Fast, Safe & Affordable Deliveries Across South Africa</p>
+    <p>Fast, Safe & Affordable Deliveries Across South Africa 🇿🇦</p>
   </header>
+
+  <div class="under-construction" role="alert" aria-live="polite">
+    🚧 This platform is currently under development. The Luba Deliveries App will soon be available on the Google Play Store and Apple App Store. Stay tuned!
+  </div>
 
   <section>
     <h2>About Us</h2>
     <p>
-      Luba Deliveries is a modern logistics solution built for individuals and small businesses in South Africa.
-      We provide on-demand, same-day, and scheduled delivery services at affordable prices — right through our mobile app.
+      Luba Deliveries is a modern logistics solution built <span class="highlight">for individuals and small businesses across South Africa</span>.
+      We offer on-demand, same-day, and scheduled delivery services at affordable prices — all accessible through our user-friendly mobile app.
     </p>
 
     <h2>Features</h2>
     <ul>
-      <li>📦 Real-time parcel tracking</li>
-      <li>📍 GPS-powered delivery routes</li>
-      <li>💳 Secure in-app payments (via Peach Payments)</li>
-      <li>✅ Easy pickup requests via mobile</li>
+      <li>📦 Real-time parcel tracking for peace of mind</li>
+      <li>📍 GPS-powered delivery routes for maximum efficiency</li>
+      <li>💳 Secure in-app payments via Pay Stack</li>
+      <li>✅ Simple pickup requests via mobile</li>
+      <li>🚐 Passenger vans available for people + belongings</li>
     </ul>
 
     <h2>Who We Serve</h2>
-    <p>We help customers in urban and township areas deliver anything from groceries, small packages, to essential documents.</p>
+    <ul>
+      <li>Groceries, parcels, and essential documents</li>
+      <li>Families and individuals relocating with furniture and belongings</li>
+      <li>Students moving between apartments or residences</li>
+      <li>Small businesses needing reliable goods transport</li>
+      <li>Artisans and online sellers delivering directly to clients</li>
+      <li>🚐 <strong>Passenger vans</strong> ideal for relocations with family or friends, with enough space for people and their luggage</li>
+    </ul>
+
+    <h2>Pricing Structure</h2>
+    <p>Our pricing is designed to be fair, transparent, and adaptable:</p>
+    <ul>
+      <li><strong>Vehicle Type:</strong> Select from vans, mini trucks, large trucks, or passenger vans.</li>
+      <li><strong>Storage Size:</strong> Pricing adjusts based on the cargo area required.</li>
+      <li><strong>Distance Travelled:</strong> Charged per KM to ensure clarity with no hidden fees.</li>
+    </ul>
+
+    <h3>Refund & Cancellation Policy</h3>
+    <ul>
+      <li>Cancel within 15 minutes of booking: <strong>Full refund</strong>.</li>
+      <li>Same-day cancellations: <strong>25% cancellation fee</strong>.</li>
+      <li>No-show: <strong>No refund</strong>.</li>
+      <li>If cancelled by Luba: <strong>Full refund or delivery credit</strong>.</li>
+      <li>Refunds processed within <strong>5–7 business days</strong>.</li>
+    </ul>
+
+    <h3>Terms of Service</h3>
+    <ul>
+      <li>All bookings must be made via the official Luba Deliveries app.</li>
+      <li>Customers must provide accurate addresses and delivery details.</li>
+      <li>Deliveries must not include illegal or hazardous items.</li>
+      <li>Luba is not liable for delays due to traffic, protests, or weather conditions.</li>
+      <li>By using Luba, you agree to our safety and legal standards.</li>
+    </ul>
+
+    <h3>Privacy Policy</h3>
+    <p>
+      We respect your data. All customer details are protected and never shared without permission. Payments and communications are encrypted and comply with POPIA standards in South Africa.
+    </p>
+
+    <h2>Why Choose Luba Deliveries?</h2>
+    <p>
+      At Luba Deliveries, we believe in more than just moving parcels — we’re about moving with purpose.
+      We are <strong>100% South African 🇿🇦</strong>, built by locals, for locals. We understand your needs because we <em>are</em> you.
+      Whether it’s navigating tight township streets or meeting unique cultural expectations, our team delivers with care and precision.
+    </p>
+    <p>
+      By choosing Luba, you’re supporting local innovation, local jobs, and local excellence.
+      We’re not just another delivery company — we’re <strong>your</strong> delivery company. Proudly South African. Always reliable.
+    </p>
+
+    <h2>Contact Us</h2>
+    <form action="mailto:lubadapp@gmail.com" method="POST" enctype="text/plain">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required />
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required />
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
 
     <div class="contact">
-      <h3>Contact Us</h3>
-      <p>Email: lubadapp@gmail.com</p>
+      <h3>Contact Info</h3>
+      <p>Email: <a href="mailto:lubadapp@gmail.com">lubadapp@gmail.com</a></p>
       <p>Phone: +27 63 561 7348</p>
+    </div>
+
+    <div class="developers">
+      <h3>Developed By</h3>
+      <p><strong>Boitumelo Khauoe</strong> &amp; <strong>Mathabo Motaung</strong></p>
+      <p>Proudly South African Innovators 🇿🇦</p>
     </div>
   </section>
 
